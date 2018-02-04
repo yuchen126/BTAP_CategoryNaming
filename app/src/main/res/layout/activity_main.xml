@@ -14,37 +14,37 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         tools:layout_editor_absoluteX="24dp"
         tools:layout_editor_absoluteY="38dp"
+        android:layout_marginTop="45dp"
         android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/btn_start"
-        android:layout_alignStart="@+id/btn_start"
-        android:layout_marginTop="34dp" />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/tv2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Time Left:"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="191dp"
         android:layout_alignBaseline="@+id/tv_timer"
         android:layout_alignBottom="@+id/tv_timer"
+        android:layout_alignEnd="@+id/tv3"
         android:layout_alignRight="@+id/tv3"
-        android:layout_alignEnd="@+id/tv3" />
+        android:text="Time Left:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="191dp" />
 
     <TextView
         android:id="@+id/tv_timer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="212dp"
-        tools:layout_editor_absoluteY="191dp"
-        android:layout_marginTop="72dp"
-        android:layout_below="@+id/tv1"
-        android:layout_alignRight="@+id/btn_next"
         android:layout_alignEnd="@+id/btn_next"
+        android:layout_alignRight="@+id/btn_next"
+        android:layout_below="@+id/tv1"
+        android:layout_marginEnd="67dp"
         android:layout_marginRight="67dp"
-        android:layout_marginEnd="67dp" />
+        android:layout_marginTop="72dp"
+        android:text="30"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:layout_editor_absoluteX="212dp"
+        tools:layout_editor_absoluteY="191dp" />
 
     <Button
         android:id="@+id/btn_start"
@@ -53,12 +53,12 @@
         android:text="Start"
         tools:layout_editor_absoluteX="35dp"
         tools:layout_editor_absoluteY="433dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginStart="60dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
         android:layout_alignBaseline="@+id/btn_next"
         android:layout_alignBottom="@+id/btn_next"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignLeft="@+id/tv1"
+        android:layout_alignStart="@+id/tv1" />
 
     <Button
         android:id="@+id/btn_next"
@@ -67,35 +67,37 @@
         android:text="Next"
         tools:layout_editor_absoluteX="234dp"
         tools:layout_editor_absoluteY="433dp"
-        android:layout_marginRight="42dp"
-        android:layout_marginEnd="42dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="100dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="44dp" />
+        android:layout_alignRight="@+id/tv1"
+        android:layout_alignEnd="@+id/tv1" />
 
     <TextView
         android:id="@+id/tv3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Category:"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="317dp"
-        android:layout_marginTop="99dp"
-        android:layout_below="@+id/tv2"
+        android:layout_alignEnd="@+id/btn_start"
         android:layout_alignRight="@+id/btn_start"
-        android:layout_alignEnd="@+id/btn_start" />
+        android:layout_below="@+id/tv2"
+        android:layout_marginTop="99dp"
+        android:text="Category:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="317dp" />
 
     <TextView
         android:id="@+id/tv_cate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="212dp"
-        tools:layout_editor_absoluteY="317dp"
         android:layout_alignBaseline="@+id/tv3"
         android:layout_alignBottom="@+id/tv3"
         android:layout_alignLeft="@+id/tv_timer"
-        android:layout_alignStart="@+id/tv_timer" />
+        android:layout_alignStart="@+id/tv_timer"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:layout_editor_absoluteX="212dp"
+        tools:layout_editor_absoluteY="317dp" />
 
 </android.widget.RelativeLayout>

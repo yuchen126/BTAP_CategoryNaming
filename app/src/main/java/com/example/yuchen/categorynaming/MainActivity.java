@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
         textView_timer= (TextView) findViewById(R.id.tv_timer);
         textView_cate = (TextView) findViewById(R.id.tv_cate);
 
-        AssetManager am = context.getAssets();
         try {
             InputStream in = this.getAssets().open("category.txt");
             reader = new BufferedReader(new InputStreamReader(in));
@@ -55,13 +54,13 @@ public class MainActivity extends AppCompatActivity {
                         textView_timer.setText(String.valueOf(counter));
                         counter--;
                     }
-                    public  void onFinish(){
+                    public void onFinish(){
                         textView_timer.setText("FINISH!!");
                     }
                 }.start();
             }
         });
-        btn_start.setOnClickListener(new View.OnClickListener()
+        btn_next.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v) {
